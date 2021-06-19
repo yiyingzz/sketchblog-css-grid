@@ -47,13 +47,9 @@ h2 {
 .grid {
   display: grid;
   column-gap: 30px;
-  row-gap: 30px;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-auto-rows: 10px;
-}
-
-.item {
-  border-bottom: 1px solid #ccc;
+  row-gap: 0px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: 2px;
 }
 
 .content img {
@@ -71,7 +67,8 @@ h2 {
   font-style: italic;
   color: #766;
   margin: 0;
-  padding-bottom: 15px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
 }
 
 footer {
