@@ -21,11 +21,15 @@ function resizeGridItem(item) {
 }
 
 function resizeAllGridItems() {
-  console.log('resize');
   const allItems = document.querySelectorAll('.item');
   for (let i = 0; i < allItems.length; i++) {
-    resizeGridItem(allItems[i]);
+    imagesLoaded(allItems[i], resizeInstance);
   }
+}
+
+function resizeInstance(instance) {
+  const item = instance.elements[0];
+  resizeGridItem(item);
 }
 
 window.onload = resizeAllGridItems();
