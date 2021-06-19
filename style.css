@@ -91,3 +91,7 @@ footer {
   font-size: 1.4rem;
   padding: 20px 0;
 }
+
+footer .heart {
+  color: #c03060;
+}
