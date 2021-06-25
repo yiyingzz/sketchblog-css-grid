@@ -3,7 +3,7 @@ const allItems = grid.querySelectorAll('.item');
 
 function resize() {
   const rowHeight = getStyleValue(grid, 'grid-auto-rows');
-  const rowGap = getStyleValue(grid, 'row-gap');
+  const rowGap = getStyleValue(grid, 'grid-row-gap');
   grid.style.gridAutoRows = 'auto';
   allItems.forEach((item) => {
     item.style.gridRowEnd = `span ${Math.ceil(
