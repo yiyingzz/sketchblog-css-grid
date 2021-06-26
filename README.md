@@ -15,6 +15,6 @@ Visit the live site here: https://yiying.ca/sketch/
 - first, I put `align-items: self-start;` into the CSS instead of re-adding it everytime through JS
 - it seems like the default is more or less the same thing visually
 
-- second, Chrome (and Edge, which also uses Chromium) only allows 1001 rows in a grid so this layout will quickly break on mobile (and also on desktop/tablet if there's a lot of content) if you set your `grid-auto-rows` to a very small value, which I did in order to make the spacing more uniform
+- second, Chrome (and Edge, which also uses Chromium) only allows 1000 rows in a grid (you can see this in the inspector) so this layout will quickly break on mobile (and also on desktop/tablet if there's a lot of content) if you set your `grid-auto-rows` to a very small value, which I did in order to make the spacing more uniform
 - you can actually see this happening on the codepen example in the 2nd tutorial since the dev made his rows 1px in height
 - this isn't a huge problem but it does mean that the spacing between the items aren't exact (the first tutorial talks about this, basically the greater the `grid-auto-rows` value is, the more varied the extra space is at the end of the content for each item)
