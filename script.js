@@ -64,13 +64,12 @@ function init() {
     </article>
   `;
   });
-
   grid.innerHTML = html;
-  resize();
 }
 
 document.addEventListener("DOMContentLoaded", init);
 window.addEventListener("resize", resize);
+window.addEventListener("load", resize);
 
 console.log(`
 ⢀⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⣠⣤⣶⣶
